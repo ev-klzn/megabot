@@ -2665,10 +2665,7 @@
         render
     });
     const tippy_esm = tippy;
-    modules_flsModules.tippy = tippy_esm("[data-tippy-content]", {
-        animation: "scale",
-        trigger: "click"
-    });
+    modules_flsModules.tippy = tippy_esm("[data-tippy-content]", {});
     class ScrollWatcher {
         constructor(props) {
             let defaultConfig = {

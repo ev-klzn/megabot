@@ -225,119 +225,6 @@ body::after {
   -o-object-fit: contain;
   object-fit: contain
 }
-.cn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 62.5rem;
-  border: .25rem solid #000;
-  background: linear-gradient(180deg,#fff 0,#fffcab 140.1%);
-  box-shadow: 0 0 .25rem 0 rgba(0,0,0,.25) inset;
-  padding-left: 1.25rem;
-  position: relative
-}
-.cn::before {
-  content: "CA";
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 2.25rem;
-  border: .25rem solid #000;
-  background: linear-gradient(0deg,#ff1c1c 0,#ff1c1c 100%),#fdfaf2;
-  box-shadow: .125rem -7.75rem 0 0 rgba(253,160,48,.11) inset;
-  padding: .75rem 1.25rem;
-  color: #fff5df;
-  text-align: center;
-  font-weight: 700;
-  line-height: 1.01;
-  font-size: .625em;
-  -webkit-transform: translate(1.5625rem,-70%);
-  transform: translate(1.5625rem,-70%)
-}
-.cn:has(.cn__button:hover) span {
-  color: #ff1c1c
-}
-.cn__address {
-  color: #000;
-  text-align: center;
-  -webkit-line-clamp: 1;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  transition: color .2s;
-  will-change: color
-}
-.cn__button {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  aspect-ratio: 1;
-  z-index: 5;
-  width: 3.8125rem
-}
-.cn__button::before {
-  content: "";
-  position: absolute;
-  width: calc(100% + .5rem);
-  height: calc(100% + .5rem);
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  background: url(../img/buy/num-dec.webp) center/cover no-repeat;
-  z-index: -1
-}
-.cn__button svg {
-  width: 1.6875rem
-}
-.cn__button svg path {
-  fill: #000;
-  will-change: fill;
-  transition: fill .2s
-}
-.cn__hint {
-  position: absolute;
-  display: flex;
-  top: 0;
-  left: 50%;
-  padding: .9375rem 1.25rem .625rem 1.25rem;
-  z-index: 100;
-  border-radius: .5rem;
-  white-space: nowrap;
-  pointer-events: none;
-  -webkit-transform: translate(-50%,-100%) scale(.5);
-  transform: translate(-50%,-100%) scale(.5);
-  opacity: 0;
-  transition: opacity .3s,-webkit-transform .3s;
-  transition: transform .3s,opacity .3s;
-  transition: transform .3s,opacity .3s,-webkit-transform .3s;
-  color: #fff;
-  font-size: 70%
-}
-.cn__hint,
-.cn__hint::after {
-  background-color: #ee4e0a
-}
-.cn__hint::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%,90%);
-  transform: translate(-50%,90%);
-  width: 12%;
-  aspect-ratio: 1/.55;
-  clip-path: polygon(50% 100%,0 0,100% 0)
-}
-.active .cn__hint {
-  -webkit-transform: translate(-50%,-100%) scale(1);
-  transform: translate(-50%,-100%) scale(1);
-  opacity: 1
-}
 .header__container {
   padding-top: .625rem;
   padding-bottom: .625rem;
@@ -912,58 +799,105 @@ body::after {
   line-height: 150%;
   letter-spacing: -.304px
 }
-.copy-link {
-  position: relative;
+.cn {
   display: flex;
   align-items: center;
-  border: var(--primary-border);
-  width: 100%;
-  border-radius: var(--border-radius-primary);
-  background-color: var(--bg-secondary)
+  justify-content: space-between;
+  border-radius: 8px;
+  background: rgba(217,217,217,.16);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+  padding: .625rem 1.25rem;
+  position: relative;
+  margin-bottom: 1.875rem
 }
-.light .copy-link {
-  background-color: var(--bg-primary)
-}
-.copy-link__button {
-  flex: 0 0 2.375rem
-}
-.copy-link__button::before {
-  width: 2.375rem;
-  height: 2.375rem;
-  display: grid;
-  place-items: center;
-  font-size: 1rem;
-  background-color: #f5f5f7;
-  color: var(--text-gray);
-  border-right: var(--primary-border);
-  border-top-left-radius: var(--border-radius-primary);
-  border-bottom-left-radius: var(--border-radius-primary)
-}
-.copy-link__address {
-  flex: 1 1 auto;
-  font-size: .8125rem;
-  color: var(--text-gray);
-  padding: .5rem .75rem;
-  display: block;
-  border-top-right-radius: var(--border-radius-primary);
-  border-bottom-right-radius: var(--border-radius-primary);
-  white-space: nowrap;
+.cn__address {
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis
+  text-overflow: ellipsis;
+  word-break: break-all;
+  transition: color .2s;
+  will-change: color;
+  color: #5398e9;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -.532px
 }
-.copy-link__success {
+.cn__button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  z-index: 5;
+  width: 3.8125rem
+}
+.cn__button::before {
+  content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  transition: all .3s ease
+  width: calc(100% + .5rem);
+  height: calc(100% + .5rem);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  background: url(../img/buy/num-dec.webp) center/cover no-repeat;
+  z-index: -1
 }
-.success-open .copy-link__success {
-  -webkit-transform: scale(1);
-  transform: scale(1)
+.cn__button svg {
+  width: 1.6875rem
+}
+.cn__button svg path {
+  fill: #000;
+  will-change: fill;
+  transition: fill .2s
+}
+.cn__hint {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 50%;
+  padding: .9375rem 1.25rem .625rem 1.25rem;
+  z-index: 100;
+  border-radius: .5rem;
+  white-space: nowrap;
+  pointer-events: none;
+  -webkit-transform: translate(-50%,-100%) scale(.5);
+  transform: translate(-50%,-100%) scale(.5);
+  opacity: 0;
+  transition: opacity .3s,-webkit-transform .3s;
+  transition: transform .3s,opacity .3s;
+  transition: transform .3s,opacity .3s,-webkit-transform .3s;
+  color: #fff;
+  font-size: 70%
+}
+.cn__hint,
+.cn__hint::after {
+  background-color: #5398e9
+}
+.cn__hint::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%,90%);
+  transform: translate(-50%,90%);
+  width: 12%;
+  aspect-ratio: 1/.55;
+  clip-path: polygon(50% 100%,0 0,100% 0)
+}
+.active .cn__hint {
+  -webkit-transform: translate(-50%,-100%) scale(1);
+  transform: translate(-50%,-100%) scale(1);
+  opacity: 1
 }
 .tippy-box[data-animation=scale][data-placement^=top] {
   -webkit-transform-origin: bottom;
@@ -1066,11 +1000,6 @@ body::after {
   padding: 5px 9px;
   z-index: 1
 }
-@media (min-width:93.125em) {
-  .cn {
-    font-size: 2rem
-  }
-}
 @media (min-width:120em) {
   [class*=__container] {
     padding-left: .9375rem
@@ -1078,22 +1007,16 @@ body::after {
   [class*=__container] {
     padding-right: .9375rem
   }
+  .main__boost {
+    gap: .9375rem
+  }
   .cn {
     -webkit-column-gap: 1.6875rem;
     -moz-column-gap: 1.6875rem;
     column-gap: 1.6875rem
   }
-  .cn::before {
-    padding-top: .75rem
-  }
-  .cn::before {
-    padding-bottom: .75rem
-  }
   .cn__button svg {
     width: 1.6875rem
-  }
-  .main__boost {
-    gap: .9375rem
   }
 }
 @media (max-width:20em) {
@@ -1103,25 +1026,16 @@ body::after {
   [class*=__container] {
     padding-right: .9375rem
   }
-  .cn {
-    font-size: 1.125rem
+  .main__boost {
+    gap: .3125rem
   }
   .cn {
     -webkit-column-gap: .9375rem;
     -moz-column-gap: .9375rem;
     column-gap: .9375rem
   }
-  .cn::before {
-    padding-top: .375rem
-  }
-  .cn::before {
-    padding-bottom: .375rem
-  }
   .cn__button svg {
     width: 1.25rem
-  }
-  .main__boost {
-    gap: .3125rem
   }
 }
 @media (min-width:20em)and (max-width:120em) {
@@ -1131,36 +1045,15 @@ body::after {
   [class*=__container] {
     padding-right: clamp(.9375rem ,.9375rem + 0 ,.9375rem)
   }
+  .main__boost {
+    gap: clamp(.3125rem ,.1875rem + .625vw ,.9375rem)
+  }
   .cn {
     -webkit-column-gap: clamp(.9375rem ,.7875rem + .75vw ,1.6875rem);
     -moz-column-gap: clamp(.9375rem ,.7875rem + .75vw ,1.6875rem);
     column-gap: clamp(.9375rem ,.7875rem + .75vw ,1.6875rem)
   }
-  .cn::before {
-    padding-top: clamp(.375rem ,.3rem + .375vw ,.75rem)
-  }
-  .cn::before {
-    padding-bottom: clamp(.375rem ,.3rem + .375vw ,.75rem)
-  }
   .cn__button svg {
     width: clamp(1.25rem ,1.1625rem + .4375vw ,1.6875rem)
-  }
-  .main__boost {
-    gap: clamp(.3125rem ,.1875rem + .625vw ,.9375rem)
-  }
-}
-@media (min-width:61.99875em)and (max-width:93.125em) {
-  .cn {
-    font-size: clamp(1.375rem ,.1300951769rem + 2.0079514879vw ,2rem)
-  }
-}
-@media (min-width:20em)and (max-width:61.99875em) {
-  .cn {
-    font-size: clamp(1.125rem ,.7083209322rem + 2.0833953391vw ,2rem)
-  }
-}
-@media (any-hover:hover) {
-  .cn__button:hover svg path {
-    fill: #ee4e0a
   }
 }
