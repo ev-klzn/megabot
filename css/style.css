@@ -562,7 +562,7 @@ body::after {
   margin-bottom: 1.875rem;
   height: .875rem;
   border-radius: 10px;
-  border: 1px solid #121022;
+  border: 2px solid #121022;
   background: #1b1931;
   width: 6.25%rem
 }
