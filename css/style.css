@@ -527,7 +527,7 @@ body::after {
   letter-spacing: -.608px
 }
 .main__boost-bottom {
-  color: #d3d2d2;
+  color: #707579;
   font-family: Roboto;
   font-size: 20px;
   line-height: 22px;
@@ -549,7 +549,7 @@ body::after {
   margin-bottom: .25rem
 }
 .main__boost-frens {
-  color: #d3d2d2;
+  color: #707579;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -560,7 +560,7 @@ body::after {
 .main__energy {
   position: relative;
   margin-bottom: 1.875rem;
-  height: .875rem;
+  height: 1rem;
   border-radius: 10px;
   border: 2px solid #121022;
   background: #1b1931;

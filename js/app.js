@@ -2778,6 +2778,10 @@
             }));
         }
     }), 0);
+    const box = document.querySelector(".main__logo");
+    box.addEventListener("click", (() => {
+        box.classList.toggle("active");
+    }));
     window["FLS"] = false;
     showMore();
     copyTextToClipboard();
