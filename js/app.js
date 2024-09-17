@@ -279,6 +279,12 @@
             }));
         }));
     }
+    function rotate() {
+        const box = document.querySelector(".main__logo");
+        box.addEventListener("click", (() => {
+            box.classList.toggle("active");
+        }));
+    }
     class Popup {
         constructor(options) {
             let config = {
@@ -2781,4 +2787,5 @@
     window["FLS"] = false;
     showMore();
     copyTextToClipboard();
+    rotate();
 })();
