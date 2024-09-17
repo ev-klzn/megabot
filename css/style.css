@@ -172,7 +172,7 @@ body::after {
   align-items: center
 }
 .popup__content {
-  background: #2a2744;
+  background: #383838;
   visibility: hidden;
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -294,7 +294,7 @@ body::after {
   margin-bottom: 1.5rem;
   font-size: 20px;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 130%;
   letter-spacing: -.38px
 }
 .title--center {
@@ -643,7 +643,8 @@ body::after {
   background-color: #2a2744;
   display: flex;
   gap: .75rem;
-  min-width: 17.5rem
+  min-width: 17.5rem;
+  background-color: #383838
 }
 .item__aside {
   flex: 0 0 3.375rem
@@ -690,12 +691,13 @@ body::after {
   aspect-ratio: 24/24
 }
 .invites__title {
-  margin-bottom: 0
+  margin-bottom: .5rem;
+  font-weight: 700
 }
 .invites__label {
   color: #5398e9;
   font-size: 14px;
-  line-height: 150%;
+  line-height: 130%;
   letter-spacing: -.266px;
   margin-bottom: 2.375rem
 }
@@ -782,9 +784,20 @@ body::after {
   align-items: center;
   position: relative
 }
-.invites__people:not(:last-child)::before {
+.invites__people:first-child::after {
   left: 64px;
-  bottom: -25px;
+  bottom: -30px;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: .1875rem;
+  border-radius: .1875rem;
+  height: 30px;
+  background: #c9c9c9
+}
+.invites__people:nth-child(2)::before {
+  left: 64px;
+  bottom: -15px;
   content: "";
   position: absolute;
   z-index: 1;
@@ -797,6 +810,13 @@ body::after {
   aspect-ratio: 128/128;
   width: 8rem;
   height: 8rem
+}
+.invites__people-image--small {
+  text-align: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: 5rem;
+  height: 5rem
 }
 .invites__people-body {
   text-align: center
