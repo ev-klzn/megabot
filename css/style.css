@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Roboto:regular,500,600&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Redressed:regular);
+@import url(https://fonts.googleapis.com/css?family=Redressed:regular&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:700&display=swap);
 @font-face {
   font-family: "SF Pro Display";
   src: local("SF Pro Display Regular"),local("SFProDisplay-Regular"),url(../../fonts/SFProDisplay-Regular.woff2) format("woff2");
@@ -348,13 +349,13 @@ body::after {
 }
 .received__count {
   color: #31d158;
+  font-family: Quicksand;
   font-size: 2.25rem;
   font-weight: 700;
   letter-spacing: .4px;
   display: flex;
   gap: .3125rem;
   align-items: center;
-  font-family: "SF Pro Display";
   text-transform: uppercase
 }
 .received__count span {
